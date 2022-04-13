@@ -1,0 +1,8 @@
+com\example\jcasbin\contorller.class
+com\example\jcasbin\AuthzApplication.class
+com\example\jcasbin\EnforcerConfigProperties.class
+com\example\jcasbin\Policy.class
+com\example\jcasbin\JCasbinAuthzFilter.class
+com\example\jcasbin\AuthException.class
+com\example\jcasbin\EnforcerFactory.class
+com\example\jcasbin\Group.class
