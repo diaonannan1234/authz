@@ -59,10 +59,10 @@ public class EnforcerFactory implements InitializingBean {
                 enforcerConfigProperties.getUsername(),
                 enforcerConfigProperties.getPassword());
         Model model = new Model();
-        ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
-        Resource resource = resolver.getResource(modelpath);
-        model.loadModel(resource.getFile().getCanonicalPath());
-        // model.loadModelFromText(MODEL);
+        //ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
+        //Resource resource = resolver.getResource(modelpath);
+        //model.loadModel(resource.getFile().getCanonicalPath());
+         model.loadModelFromText(MODEL);
         enforcer = new Enforcer(model, jdbcAdapter);
 
     }
