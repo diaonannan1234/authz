@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cm-appvars
+data:
+  server_port: 8090
+  database_ip: 39.100.238.150
+  database_port: 3306
+  database_name: prule
+  database_u: root
+  database_p: !QAZ2wsx
+  casbin_model: authz_model.conf

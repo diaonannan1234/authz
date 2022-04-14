@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: auth_z
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: authz
+  template:
+    metadata:
+      labels:
+        app: authz
+    spec:
+      containers:
+        - name: authz
+          image: duweiduwais/authz:v1
+          env:
+            - name: server_port
+              valueFrom:
+                configMapKeyRef:
+                  name: cm-appvars
+                  key: server_port
